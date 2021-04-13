@@ -18,12 +18,12 @@ export default function HeaderProduct() {
         <nav class="nav">
             <div class="navigation container">
                 <div class="logo">
-                    <h1>DrogStore</h1>
+                    <Link to="/"><h1>DrogStore</h1></Link>
                 </div>
                 <div class="menu">
                     <div class="top-nav">
                         <div class="logo">
-                            <h1>DrogStore</h1>
+                            <Link to="/"><h1>DrogStore</h1></Link>
                         </div>
                         <div class="close">
                             <i class="bx bx-x"></i>

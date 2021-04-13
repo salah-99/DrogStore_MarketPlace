@@ -3,12 +3,14 @@ import thunk from 'redux-thunk';
 import { cartReducer } from './reducers/cartReducers';
 import { orderCreateReducer, orderDetailsReducer, orderMineListReducer, orderPayReducer } from './reducers/orderReducers';
 import { productListReducer } from './reducers/productReducers';
-import { userDetailsReducer, userRegisterReducer, userSigninReducer, userUpdateProfileReducer } from './reducers/user.Reducers';
+import { userDetailsReducer, userRegisterReducer, userSigninReducer, userUpdateProfileReducer } from './reducers/userReducers';
 
 const initialState = {
     userSignin: {
-        userInfo: localStorage.getItem('userInfo')? JSON.parse(localStorage.getItem('userInfo')): null
-    },
+        userInfo: localStorage.getItem('userInfo')
+          ? JSON.parse(localStorage.getItem('userInfo'))
+          : null,
+      },
     cart:{
         cartItems: localStorage.getItem('cartItems')
         ? JSON.parse(localStorage.getItem('cartItems'))

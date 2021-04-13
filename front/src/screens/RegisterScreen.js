@@ -37,25 +37,25 @@ export default function RegisterScreen(props) {
         <div>
             <img  id="back" src={bcn}></img>
             <div id="conten">
-                <div class="form sign-in" id="group">
+                <div class="form sign-in" id="group" onSubmit={submitHandler}>
                     <h2 id="sin" style={{color:'#a685e2'}}>Sign Up</h2>
                     <div>
                         {loading && <LoadingBox></LoadingBox>}
                         {error && <MessageBox variant="danger">Invalid Email or Password</MessageBox>}
                     </div>
                     <label id="sinL">
-                        <input type="text" name="name" placeholder="Name" required onChange={e => setName(e.target.value)}/>
+                        <input type="text" name="name" placeholder="Name" required onChange={(e) => setName(e.target.value)}/>
                     </label>
                     <label id="sinL">
-                        <input type="email" name="email" placeholder="Email Address" required onChange={e => setEmail(e.target.value)}/>
+                        <input type="email" name="email" placeholder="Email Address" required onChange={(e) => setEmail(e.target.value)}/>
                     </label>
                     <label>
-                        <input type="password" name="password" placeholder="Password" required onChange={e => setPassword(e.target.value)}/>
+                        <input type="password" name="password" placeholder="Password" required onChange={(e) => setPassword(e.target.value)}/>
                     </label>
                     <label>
-                        <input type="password" name="confirmPassword" placeholder="Confirm Password" required onChange={e => setConfirmPassword(e.target.value)}/>
+                        <input type="password" name="confirmPassword" placeholder="Confirm Password" required onChange={(e) => setConfirmPassword(e.target.value)}/>
                     </label>
-                    <button className="submit" type="button" onClick={submitHandler}>Sign Up</button>
+                    <button className="submit" type="button" >Sign Up</button>
                     <p style={{marginLeft: '31%', color:'grey'}}>Already have an account ?</p>
                     <span id="span" style={{marginLeft: '45%', color:'#f60091'}}><Link to={`/signin?redirect=${redirect}`}>Sign In</Link></span>
                 </div>

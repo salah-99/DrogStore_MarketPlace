@@ -101,7 +101,7 @@ export default function HeaderProduct() {
         <div class="hero-content">
           <h2><span class="discount">70% </span> SALE OFF</h2>
           <h1>
-            <span>Summer Vibes</span>
+            <span>Medicale Equipement</span>
             <span>mode on</span>
           </h1>
           <a class="btn" href="#">shop now</a>

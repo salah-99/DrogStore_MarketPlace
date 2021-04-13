@@ -41,4 +41,4 @@ const  isAdmin = (req, res, next) => {
 };
 module.exports = generateToken;
 module.exports = isAuth;
-module.exports = isAdmin;
+// module.exports = isAdmin;

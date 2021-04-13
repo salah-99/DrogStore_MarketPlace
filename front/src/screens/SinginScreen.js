@@ -8,7 +8,7 @@ import bcn from '../img/bc.jpg';
 
 export default function SinginScreen(props) {
 
-    const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const redirect = props.location.search
@@ -40,10 +40,10 @@ export default function SinginScreen(props) {
                         {error && <MessageBox variant="danger">{error}</MessageBox>}
                     </div>
                     <label id="sinL">
-                        <input type="email" name="email" placeholder="Email Address" required onChange={e => setEmail(e.target.value)}/>
+                        <input type="email" name="email" placeholder="Email Address" required onChange={(e) => setEmail(e.target.value)}/>
                     </label>
                     <label>
-                        <input type="password" name="password" placeholder="Password" required onChange={e => setPassword(e.target.value)}/>
+                        <input type="password" name="password" placeholder="Password" required onChange={(e) => setPassword(e.target.value)}/>
                     </label>
                     <button className="submit" id="sub" type="button" onClick={submitHandler}>Sign In</button>
                     <p style={{marginLeft: '37%', color:'grey'}}>Creat new account :</p>
